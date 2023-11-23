@@ -53,6 +53,7 @@ web_modules/
 
 # Optional eslint cache
 .eslintcache
+.DS_Store
 
 # Optional stylelint cache
 .stylelintcache
