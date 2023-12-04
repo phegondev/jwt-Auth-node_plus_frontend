@@ -1,0 +1,13 @@
+<div class="home-container">
+    <h2>Explore Our Products</h2>
+    <div class="product-list" *ngIf="products.length > 0; else noProducts">
+        <div *ngFor="let product of products" class="product-item">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p class="amount">Amount: ${{ product.amount }}</p>
+        </div>
+    </div>
+    <ng-template #noProducts>
+        <p>No products available.</p>
+    </ng-template>
+</div>

@@ -1,0 +1,7 @@
+<div class="navbar">
+    <a routerLink="/">Home</a>
+    <a *ngIf="!loggedIn" [routerLink]="['/login']">Login</a>
+    <a *ngIf="!loggedIn" [routerLink]="['/register']">Register</a>
+    <a *ngIf="loggedIn" [routerLink]="['/profile']">Profile</a>
+    <a *ngIf="loggedIn" [routerLink]="['/logout']" (click)="logout()">Logout</a>
+</div>
